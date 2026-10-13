@@ -1,0 +1,39 @@
+/* stijl.css - labo 4, navigatie (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === your rules === */
+header{
+    display: flex;
+    padding: 1rem;
+    background-color: #1f3a2e;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li a{
+    color: white;
+    font-size: 1.5rem;
+}
+.logo{
+    color: #e6b53c;
+    font-size: 2rem;
+    
+}
+.actief{
+    color: #1f3a2e;
+    background-color: #e6b53c;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}

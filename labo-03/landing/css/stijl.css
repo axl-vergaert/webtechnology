@@ -1,0 +1,54 @@
+/* stijl.css - labo 3, landing (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    .banner{
+        background-color: #c8b8ff;
+    }
+    .banner a{
+        color: #5551ff;
+    }
+    body{
+        color: black;
+    }
+    main{
+        background-color: #779cee;
+    }
+}
+
+/* === your rules === */
+body{
+    padding: 2rem;
+}
+.banner{
+    height: 3rem;
+    padding: 0.8rem;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+header a{
+    margin: 1rem;
+    text-decoration: none;
+}
+main{
+    display: grid;
+    grid-template-columns: 25rem auto;
+    padding: 5rem;
+}
+img{
+    height: 25rem;
+    margin-left: 10rem;
+}
+.knop{
+    background-color: black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+article p{
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,60 @@
+/* stijl.css - labo 5, balk (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    header{
+        background-color: #000000;
+    }
+    main, footer{
+        background-color: #f8f7f5;
+        color: #1a1a1a;
+    }
+    .intro{
+        color: #6b6b6b;
+    }
+    a{
+        color: #9a9a9a;
+    }
+}
+
+/* === your rules === */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    padding: 0.5rem;
+
+}
+header a{
+    text-decoration: none;
+    margin: 0.5rem;
+    letter-spacing: 0.05em;
+    
+}
+header nav ul{
+    display: flex;
+}
+main, footer{
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+.inhoud a{
+    line-height: 1.5rem;
+}
+main{
+    padding-top: 7vh;
+}
+h2{
+    margin-bottom: 2vh;
+}
+p{
+    line-height: 1.6;
+    margin-bottom: 5vh;
+}
+#lijsten p:nth-child(4){
+    margin-bottom: 0;
+}
+footer{
+    padding-top: 1rem;
+}

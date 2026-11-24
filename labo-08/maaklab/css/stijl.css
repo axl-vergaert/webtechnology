@@ -1,0 +1,107 @@
+/* stijl.css - labo 8, maaklab (reset.css and fonts.css are linked before this file) */
+
+/* === tokens: colours, fonts, sizes, and one duration and one curve (8.1) === */
+:root {
+    --oppervlak: hsl(210 20% 97%);
+    --inkt: hsl(215 30% 14%);
+    --gedempt: hsl(215 10% 42%);
+    --accent: hsl(215 70% 40%);
+    --accentdonker: hsl(215 70% 30%);
+    --lijn: hsl(210 15% 84%);
+
+    --font: "Atkinson Hyperlegible";
+    --duur: 200ms;
+    --curve: ease-out;
+
+    --space-xs:0.25rem;
+    --space-s:0.5rem;
+    --space-m:1rem;
+    --space-l:2rem;
+    --space-xl:4rem;
+
+    --text-s:0.8rem;
+    --text-m:1rem;
+    --text-l:1.25rem;
+    --text-xl:1.563rem;
+    --text-xxl:1.953rem;
+    --text-xxxl:2.441rem;
+}
+
+/* === base === */
+
+/* === header: links with an underline that grows from the left (8.3, 8.6) === */
+.naam{
+    font-size: var(--text-l);
+    font-weight: 900;
+
+}
+.kop{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-bottom: 1px solid;
+}
+.kop ul{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    gap: var(--space-m);
+
+}
+main{
+    display:flex;
+    justify-content: center;
+}
+.workshops{
+    max-width: 80rem;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    margin-left: var(--space-l);
+    
+}
+h2{
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-l);
+}
+/* === cards: transition on the base state (8.2), lift on hover and focus-within === */
+.kaarten{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--space-l);
+}
+.kaart{
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: var(--space-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+
+    transition: transform var(--duur) var(--curve), box-shadow var(--duur) var(--curve);
+}
+.datum{
+    font-weight: var(--space-s);
+    color: var(--accent);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+h3{
+    font-size: var(--text-l);
+    line-height: 1.3;
+
+}
+p{
+    color: var(--gedempt);
+}
+/* === hover only where hovering exists (6.9) === */
+@media (hover: hover) {
+    .kaart:hover{
+        transform: scale(0.25rem);
+        box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 0.15);
+    }
+}
+
+/* === footer === */
+
+/* === reduced motion (8.5) === */

@@ -1,0 +1,74 @@
+/* stijl.css - labo 6, affiche (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    body{
+        background-color: #1d1d1b;
+        color: #fff8ee;
+    }
+    .affiche{
+        background-color: #2554ab;
+    }
+}
+
+/* === base: narrow screens first === */
+body{
+    max-width: 28rem;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.affiche{
+    padding: 6vw;
+    height: 80vh;
+    text-align: center;
+    padding-top: 35vh;
+}
+h1{
+    font-size: 2rem;
+    line-height: 1.05;
+}
+.ondertitel{
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+}
+span{
+    display: block;
+    height: 14vw;
+    width: 14vw;
+    text-align: center;
+    padding-top: 6vw;
+}
+.prijs{
+    background-color: #ffc83d;
+    color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 5.2rem;
+    left: 4.2rem;
+    z-index: 1;
+}
+.datum{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    z-index: 0;
+}
+.uitverkocht{
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    left: 9rem;
+    z-index: 1;
+    padding-top: -1rem;
+    
+}
+.logo{
+    background-color: black;
+    position: absolute;
+    top: 7rem;
+    left: 6.5rem;
+    z-index: 0;
+}
+/* === media queries: below the base rules === */

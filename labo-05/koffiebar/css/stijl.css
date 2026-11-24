@@ -1,0 +1,68 @@
+/* stijl.css - labo 5, koffiebar (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    main{
+        background-color: #f4efe6;
+        color: #2b2b2b;
+    }
+    header, footer{
+        background-color: #2f241d;
+        color: #f4efe6;
+    }
+    .logo, .actief, .prijs, .badge{
+        color: #c8742e;
+    }
+
+}
+
+/* === your rules === */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center ;
+
+}
+header ul{
+    display: flex;
+}
+header li {
+    list-style-type: none;
+    margin: 1rem;
+}
+header a{
+    text-decoration: none;
+    color: #f4efe6;;
+}
+aside{
+    width: 16rem;
+    padding: 2rem;
+}
+.kaarten {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.kaart{
+    background-color: white;
+   
+}
+.tekst{
+    height: 100%;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.prijs{
+    margin-top: auto;
+
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+header, footer{
+    grid-column: 1/3;
+}

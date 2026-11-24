@@ -1,0 +1,123 @@
+/* stijl.css - labo 6, festival (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    header, main, footer{
+        background-color: #fff8ee;
+        color: #1a1a1a;
+    }
+    .logo{
+        color: red;
+        
+    }
+    
+
+}
+
+/* === base: narrow screens first === */
+body{
+    padding: 1rem;
+}
+.logo{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header ul{
+    list-style: none;
+    padding: 0;
+}
+header a{
+    text-decoration: none;
+}
+header li{
+    margin: 0.5rem;
+}
+header .actief{
+    background-color: red;
+    color: white;
+}
+header ul a{
+    color: red;
+    font-size: 1.5rem;
+    border: 3px solid red;
+    border-radius: 3rem;
+    padding: 1rem;
+    display: block;
+    width: 10rem;
+    text-align: center;
+}
+.held{
+    background-color: red;
+    color: white;
+    padding: 2rem;
+}
+.held h1{
+    font-size: 3rem;
+}
+.held p{
+    font-size: 1.5rem;
+}
+main section:nth-child(2) h2{
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+}
+.programma{
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin: 0;
+    
+}
+.programma li{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    border-bottom: 1px solid black;
+}
+.programma time{
+    color: red;
+    font-weight: 600;
+  
+}
+.programma strong{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+footer p{
+    text-align: center;
+    font-size: 1rem;
+    padding: 3rem;
+}
+
+/* === media queries: below the base rules === */
+@media(min-width: 800px){
+    header ul{
+        display: flex;
+    }
+    footer{
+        display: none;
+    }
+    #programma li{
+        margin: 1rem;
+    }
+    .held{
+        padding: 2.7rem;
+    }
+}
+@media(min-width:1200px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    .logo{
+        padding: 0;
+        
+    }
+    
+}

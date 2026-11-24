@@ -1,0 +1,51 @@
+/* stijl.css - labo 3, kleuren (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --tomato:tomato;
+    --orangered: orangered;
+    --coral: coral;
+    --lightsalmon: lightsalmon;
+    --darkorange:darkorange ;
+    --font:Arial, Helvetica, sans-serif;
+}
+
+/* === your rules === */
+body{
+    font-family: var(--font);
+}
+ul{
+    list-style-type: none;
+    margin-right: 2.5rem;
+    
+}
+li{
+    height: 20vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    letter-spacing: 0.25rem;
+}
+.codes span{
+    padding: 0.5rem;
+}
+.tomato{
+    background-color: var(--tomato);
+}
+.orangered{
+    background-color: var(--orangered);
+}
+.coral{
+    background-color: var(--coral);
+}
+.lightsalmon{
+    background-color: var(--lightsalmon);
+}
+.darkorange{
+    background-color: var(--darkorange);
+}
